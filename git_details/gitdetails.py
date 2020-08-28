@@ -22,7 +22,8 @@ def parse():
     return arguments
 
 
-if __name__ == '__main__':
+# main() is required by setup.py -> Entrypoints
+def main():
     args = parse()
 
     details = args.details
@@ -30,3 +31,7 @@ if __name__ == '__main__':
 
     g = GitDetails(repo_path=args.path, user_name=args.user, since_date=args.since)
     g.get_commits(print_details=details)
+
+
+if __name__ == '__main__':
+    main()
