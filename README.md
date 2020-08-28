@@ -18,10 +18,13 @@ You need to install git commandline tool.
 # How to use it:
 Example usage:
  
-python3 git-details.py /home/ubuntu/my_repo "Mr Sparrow" 2020-08-01 --details Y
+python3 git_details/gitdetails.py /home/ubuntu/my_repo "Mr Sparrow" 2020-08-01 --details Y
 
 OR when running from installed package in native/docker/virtualnenv:
- 
+
 git-details /home/ubuntu/my_repo "Mr Sparrow" 2020-08-01 --details Y
 
 If you want less data (just commits without code changes) use: --details N
+
+# Getting help: 
+git-details -h
